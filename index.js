@@ -29,12 +29,18 @@ class Person {
   }
 
   print() {
-    console.log(this);
+    console.log("Class name Person" + this + "");
+  }
+
+  //   we can use toString to avoid consol.log and string concat to string like p1 + " "
+
+  toString() {
+    return `Name:${this._name} and Email:${this._email}`;
   }
 }
 
 const P1 = new Person("Hasan Emam", "hasanimam@web.com");
 const P2 = new Person("Kamal Hosian", "Kamaml@web.com");
-P2.name = "H";
-console.log(P2.name);
+P2.name = "Kamal Hoasain";
+// console.log(P2.name);
 P2.print();
