@@ -10,17 +10,21 @@ class Person {
     this._name = name;
     this._email = email;
   }
-
-  setName(name) {
-    this._name = name;
-  }
-  getName() {
+  // that is a getter function and it works like a property not methods but it look like a methods.
+  get name() {
     return this._name;
   }
-  setEmail(email) {
-    this._email = email;
+
+  //   that is setter function it work to set a new value;
+  set name(value) {
+    if (value === "H") {
+      console.log("Ei nam dis na bhai eta boss er nam.");
+      return;
+    }
+    this._name = value;
   }
-  getEmail() {
+
+  get email() {
     return this._email;
   }
 
@@ -31,8 +35,6 @@ class Person {
 
 const P1 = new Person("Hasan Emam", "hasanimam@web.com");
 const P2 = new Person("Kamal Hosian", "Kamaml@web.com");
-
-P1.setName("Mokshudar Rahman");
-P1.setEmail("mokshudarrahman@web.com");
-
-console.log(P1.getEmail(), P1.getName());
+P2.name = "H";
+console.log(P2.name);
+P2.print();
