@@ -6,16 +6,22 @@ person.age = 15;
 
 class Person {
   constructor(name, email) {
-    this.name = name;
-    this.email = email;
+    // How to private in js developer in class // use _
+    this._name = name;
+    this._email = email;
   }
 
-  changeName(name) {
-    this.name = name;
-    console.log(name);
+  setName(name) {
+    this._name = name;
   }
-  sendMail(msg) {
-    console.log("Sending the message to consol.", msg);
+  getName() {
+    return this._name;
+  }
+  setEmail(email) {
+    this._email = email;
+  }
+  getEmail() {
+    return this._email;
   }
 
   print() {
@@ -26,11 +32,7 @@ class Person {
 const P1 = new Person("Hasan Emam", "hasanimam@web.com");
 const P2 = new Person("Kamal Hosian", "Kamaml@web.com");
 
-// console.log(P1);
+P1.setName("Mokshudar Rahman");
+P1.setEmail("mokshudarrahman@web.com");
 
-P1.sendMail("Hello i want to be a backend developer.");
-P1.changeName("Hasan Emam Naim");
-P2.changeName("Mushfiq all  Naim");
-
-P1.print();
-P2.print();
+console.log(P1.getEmail(), P1.getName());
