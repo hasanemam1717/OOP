@@ -15,6 +15,7 @@ const s = new Student(
   "Computer,Maths,Etc",
   40000
 );
+
 console.log(p);
 console.log(s);
 console.log(t);
