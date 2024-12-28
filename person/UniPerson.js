@@ -25,10 +25,10 @@ class UniPerson extends Person {
 
   toString() {
     // to call toString from Person class it will work to clg id and name
-    super.toString();
-    console.log(
-      ` Department= ${this[_department]} Account = ${this[_account]}`
-    );
+
+    return `${super.toString()} Department= ${this[_department]} Account = ${
+      this[_account]
+    }`;
   }
 }
 
