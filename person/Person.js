@@ -37,11 +37,8 @@ class Person {
   }
   //   create toString method to work when the task with string
   toString() {
-    return `${this[_id]} - ${this[_name]}`;
+    return `ID:${this[_id]} Name:${this[_name]}`;
   }
 }
-const p1 = new Person(25, "Hasan Emam");
-p1.name = "Kabir";
-console.log(p1);
 
 module.exports = Person;

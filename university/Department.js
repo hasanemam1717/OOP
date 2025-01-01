@@ -45,7 +45,7 @@ class Department {
   }
 
   toString() {
-    return `ID:${this[_id]} Name:${this[_name]}`;
+    return `ID:${this[_id]} Name:${this[_name]} ${this[_subjects]}`;
   }
 }
 
