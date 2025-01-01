@@ -4,7 +4,7 @@ const _employeeId = Symbol("employeeId");
 const _salary = Symbol("salary");
 
 class Employee extends UniPerson {
-  constructor(id, employeeId, name, salary) {
+  constructor(id, name, employeeId, salary) {
     super(id, name);
     this[_employeeId] = employeeId;
     this[_salary] = salary;

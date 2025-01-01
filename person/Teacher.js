@@ -7,7 +7,7 @@ class Teacher extends Employee {
     this[_subject] = subject;
   }
 
-  get() {
+  get subject() {
     return this[_subject];
   }
   set subject(value) {

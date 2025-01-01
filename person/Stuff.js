@@ -7,7 +7,7 @@ class Stuff extends Employee {
     this[_title] = title;
   }
 
-  get() {
+  get title() {
     return this[_title];
   }
   set title(value) {
